@@ -1,0 +1,87 @@
+.home-wrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 92px;
+    max-width: 1440px;
+    padding: 10%;
+    /* height: 50vh; */
+    flex-direction: column;
+}
+
+.home__heading {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-left: 2px;
+    /* background-color: linear-gradient( #000, #fff, 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
+}
+
+.home__name {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: var(--secondary-color);
+}
+
+.home__desc {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 0.4rem;
+    padding-left: 2px;
+    line-height: 2.4rem;
+    position: relative;
+    text-align: justify;
+}
+
+.home__desc span {
+    position: relative;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.home__desc span:after {
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    background: var(--primary-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 100%;
+}
+
+.home__desc span:hover:after {
+    content: "";
+    display: block;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    background: var(--primary-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0%;
+}
+
+.home__btns {
+    margin-top: 1.4rem;
+}
+
+.btn {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out 0s;
+}
+
+.github-btn {
+    background-color: var(--black-color) !important;
+}
+
+.contact-btn {
+    background-color: var(--primary-color) !important;
+}
