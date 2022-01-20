@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-scroll'
-import { UilSun, UilMoon } from '@iconscout/react-unicons'
+// import { UilSun, UilMoon } from '@iconscout/react-unicons'
 import './Navbar.css'
 
 function Navbar() {
@@ -14,19 +14,25 @@ function Navbar() {
             setNav(false)
         }
     }
-
     window.addEventListener('scroll', changBackground)
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    }
 
     return (
         <nav className={ nav ? "nav active" : "nav" }>
-            <Link to="home" className="logo" smooth={ true } duration={ 1000 }>
-                <a className='logo__text' href="#"><span>ng</span>mnhdc</a>
+            <Link to="" className="logo" onClick={ scrollToTop }>
+                <div className='logo__text'><span>ng</span>mnhdc</div>
             </Link>
-            <label className="menu-icon" for="menu-btn">
+            <label className="menu-icon">
                 <span className="nav-icon"></span>
             </label>
             <ul className="menu">
-                <li><Link to="home" smooth={ true } duration={ 1000 }>Home</Link></li>
+                <li><Link to="" onClick={ scrollToTop }>Home</Link></li>
                 <li><Link to="about" smooth={ true } duration={ 1000 }>About</Link></li>
                 {/* <li><Link to="skills" smooth={ true } duration={ 1000 }>Skills</Link></li> */ }
                 <li><Link to="projects" smooth={ true } duration={ 1000 }>Projects</Link></li>
