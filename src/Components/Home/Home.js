@@ -10,6 +10,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { UilDribbble } from '@iconscout/react-unicons'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 // import { Link } from 'react-scroll/modules';
 import "./Home.css";
 // import Me from "../../img/me.png";
@@ -20,9 +22,10 @@ function handleClick(e) {
 }
 
 const Home = () => {
+    AOS.init()
     return (
         <div id="home" className="home-wrapper">
-            <div className="home__left-wrapper">
+            <div className="home__left-wrapper" data-aos="fade-right" data-aos-duration="2000">
                 <h2 className="home__heading">Hello, my name is</h2>
                 <h1 className="home__name">
                     <Typewriter
@@ -55,7 +58,7 @@ const Home = () => {
                     </Button>
                 </Stack>
             </div>
-            <div className="home__right-wrapper">
+            <div className="home__right-wrapper" data-aos="fade-left" data-aos-duration="2000">
                 <Stack className="icon-btns" direction="column" spacing={ 1 }>
                     {/* <Button
                         // className="btn github-btn"
@@ -78,7 +81,7 @@ const Home = () => {
                             <TwitterIcon />
                         </IconButton>
                     </a>
-                    <a className="icon-btn icon-linkedin" href="https://www.linkedin.com/in/ngmnhdc/">
+                    <a className="icon-btn icon-linkedin" href="https://linkedin.com/in/ngmnhdc/">
                         <IconButton aria-label="linkedin" color="inherit">
                             <LinkedInIcon />
                         </IconButton>
