@@ -28,7 +28,7 @@ const projects = [
         src: "my-portfolio",
         title: "Porfolio Website",
         desc: "My portfolio website including personal, educational information and my CV, plus some projects I have conducted. ",
-        features: ['ReactJS', 'Material UI', 'AOS'],
+        features: ['ReactJS', 'Material UI', 'AOS', 'EmailJS'],
         date: "01/2022"
     }
 ];
