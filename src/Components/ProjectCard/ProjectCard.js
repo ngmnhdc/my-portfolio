@@ -7,19 +7,16 @@ import './ProjectCard.css'
 
 function ProjectCard(props) {
     AOS.init()
-    // const feature = ['HTML', 'CSS', 'JavaScript']
-    // console.log(typeof props.features)
-    // // const features = props.features
-    // const featuresArr = Object.values(props.features)
-    // console.log(featuresArr)
-    // featuresArr.map(item => (
-    //     console.log(`<li>${item}</li>`)
-    // ))
+
+    function handleClick(e) {
+        e.preventDefault()
+        window.open(e.target.href);
+    }
 
     return (
         <div className="project-card" data-aos="fade-left" data-aos-duration="1000">
             <div className="project-preview">
-                <img src={ props.src } />
+                <img src={ `${process.env.PUBLIC_URL}/assets/img/${props.src}.png` } alt={ props.src } />
             </div>
             <div className="project-info">
                 <h3 className="project-title">{ props.title }</h3>
@@ -29,22 +26,24 @@ function ProjectCard(props) {
                         <li key={ item }>{ item }</li>
                     )) }
                 </ul>
-                {/* { console.log(props.features) */ }
-                {/* } */ }
-                {/* <ul className="project-features">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul> */}
                 <Stack className="project-btns" direction="row" spacing={ 2 }>
-                    <Button className="btn btn-filled" variant="contained">
+                    <Button
+                        className="btn btn-filled"
+                        variant="contained"
+                        href={ `https://ngmnhdc.github.io/${props.src}` }
+                        onClick={ handleClick }>
                         View demo
                     </Button>
-                    <Button className="btn btn-outlined" variant="outlined">
+                    <Button
+                        className="btn btn-outlined"
+                        variant="outlined"
+                        href={ `https://github.com/ngmnhdc/${props.src}` }
+                        onClick={ handleClick }>
                         Source code
                     </Button>
                 </Stack>
             </div>
+            <div className="project-date">{ props.date }</div>
         </div>
     );
 }

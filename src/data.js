@@ -1,31 +1,35 @@
 const projects = [
     {
         id: 1,
-        src: "https://images.unsplash.com/photo-1642723238341-2700a2736209?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        src: "the-minimal-closet",
         title: "The Minimal Closet",
         desc: "The e-commerce website for a clothing brand named The Minimal Closet. ",
         features: ['HTML', 'CSS', 'JavaScript', 'JQuery'],
+        date: "07/2021"
     },
     {
         id: 2,
-        src: "https://images.unsplash.com/photo-1642723238341-2700a2736209?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        src: "clone-shopee",
         title: "Shopee Clone",
-        desc: "The e-commerce website for a clothing brand named The Minimal Closet. ",
+        desc: "The UI cloning website of Shopee, which is an e-commerce trading floor and online shopping website.",
         features: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+        date: "09/2021"
     },
     {
         id: 3,
-        src: "https://images.unsplash.com/photo-1642723238341-2700a2736209?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        src: "burger-landing-page",
         title: "Burger Home Landing Page",
-        desc: "The e-commerce website for a clothing brand named The Minimal Closet. ",
+        desc: "The landing page website for Burger House, showing details about the restaurant and its products.  ",
         features: ['ReactJS', 'SCSS'],
+        date: "12/2021"
     },
     {
         id: 4,
-        src: "https://images.unsplash.com/photo-1642723238341-2700a2736209?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+        src: "my-portfolio",
         title: "Porfolio Website",
-        desc: "The e-commerce website for a clothing brand named The Minimal Closet. ",
+        desc: "My portfolio website including personal, educational information and my CV, plus some projects I have conducted. ",
         features: ['ReactJS', 'Material UI', 'AOS'],
+        date: "01/2022"
     }
 ];
 
