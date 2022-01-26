@@ -1,7 +1,7 @@
 const projects = [
     {
         id: 1,
-        src: "the-minimal-closet",
+        src: "minimal-closet",
         title: "The Minimal Closet",
         desc: "The e-commerce website for a clothing brand named The Minimal Closet. ",
         features: ['HTML', 'CSS', 'JavaScript', 'JQuery'],
@@ -17,7 +17,7 @@ const projects = [
     },
     {
         id: 3,
-        src: "burger-landing-page",
+        src: "burger-home",
         title: "Burger Home Landing Page",
         desc: "The landing page website for Burger House, showing details about the restaurant and its products.  ",
         features: ['ReactJS', 'SCSS'],
