@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/github.io/my-portfolio/static/css/main.434bfb84.css",
+    "main.js": "/github.io/my-portfolio/static/js/main.511750c1.js",
+    "static/media/avt.jpg": "/github.io/my-portfolio/static/media/avt.33b0d1e3988d222cd7de.jpg",
+    "index.html": "/github.io/my-portfolio/index.html",
+    "main.434bfb84.css.map": "/github.io/my-portfolio/static/css/main.434bfb84.css.map",
+    "main.511750c1.js.map": "/github.io/my-portfolio/static/js/main.511750c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.434bfb84.css",
+    "static/js/main.511750c1.js"
+  ]
+}
