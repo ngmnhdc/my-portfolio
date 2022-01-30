@@ -5,7 +5,6 @@ import FileDownloadIcon from '@mui/icons-material/FileDownloadOutlined';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 import AboutImage from '../../Images/avt.jpg';
-// import CV from '../../../public/cv.pdf'
 import './About.css'
 
 function handleDownload(e) {
@@ -36,8 +35,9 @@ function About() {
                         className="btn btn-download"
                         variant="contained"
                         startIcon={ <FileDownloadIcon /> }
-                        href="https://drive.google.com/file/d/1uGXZcIIl0Vpm-Vr3cSGsOzCyxvfxg_6j/view?usp=sharing"
-                        onClick={ handleDownload }>
+                        href={ `${process.env.PUBLIC_URL}/assets/CV_NguyenThaiMinhDuc.pdf` }
+                        onClick={ handleDownload }
+                    >
                         Download my CV
                     </Button>
                 </Stack>

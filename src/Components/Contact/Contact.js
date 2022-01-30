@@ -43,7 +43,6 @@ function Contact() {
                 </div>
             </div>
             <div className="contact-form" id="contact-form">
-                {/* <p className="contact-desc">Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p> */ }
                 <form className="contact-form-message" ref={ form } data-aos="fade-left" data-aos-duration="1000">
                     <label className="form-item" id="name" htmlFor="name">Name</label>
                     <input

@@ -5,7 +5,6 @@ import projects from '../../data'
 
 
 function Projects() {
-    // const feature = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'Material UI']
     return (
         <div id="projects" className="projects-wrapper">
             <h2 className="projects-heading" data-aos="zoom-in" data-aos-duration="1000">Projects</h2>
@@ -20,9 +19,6 @@ function Projects() {
                         date={ project.date }
                     />
                 )) }
-                {/* <ProjectCard title="The Minimal Closet Website" features={ feature } /> */ }
-                {/* <ProjectCard />
-                <ProjectCard /> */}
             </div>
         </div>
     );

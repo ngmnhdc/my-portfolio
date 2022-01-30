@@ -7,14 +7,11 @@ import ContactIcon from '@mui/icons-material/MailOutlineRounded';
 import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { UilDribbble } from '@iconscout/react-unicons'
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-// import { Link } from 'react-scroll/modules';
 import "./Home.css";
-// import Me from "../../img/me.png";
 
 function handleClick(e) {
     e.preventDefault()
@@ -60,12 +57,6 @@ const Home = () => {
             </div>
             <div className="home__right-wrapper" data-aos="fade-left" data-aos-duration="2000">
                 <Stack className="icon-btns" direction="column" spacing={ 1 }>
-                    {/* <Button
-                        // className="btn github-btn"
-                        startIcon={ <GitHubIcon /> }
-                        href="https://github.com/ngmnhdc"
-                        onClick={ handleClick }>
-                    </Button> */}
                     <a className="icon-btn icon-facebook" href="https://facebook.com/ngmnhdc">
                         <IconButton aria-label="facebook" color="inherit">
                             <FacebookIcon />
@@ -74,11 +65,6 @@ const Home = () => {
                     <a className="icon-btn icon-instagram" href="https://instagram.com/ngmnhdc">
                         <IconButton aria-label="instagram" color="inherit">
                             <InstagramIcon />
-                        </IconButton>
-                    </a>
-                    <a className="icon-btn icon-twitter" href="https://twitter.com/">
-                        <IconButton aria-label="twitter" color="inherit">
-                            <TwitterIcon />
                         </IconButton>
                     </a>
                     <a className="icon-btn icon-linkedin" href="https://linkedin.com/in/ngmnhdc/">

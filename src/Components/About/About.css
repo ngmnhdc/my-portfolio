@@ -15,14 +15,11 @@
 
 .about-img {
     width: 30%;
-    /* height: 500px; */
     display: flex;
     position: relative;
 }
 
 .img-card {
-    /* width: 70%; */
-    /* height: 100%; */
     border-radius: 20px;
     padding: 20px;
     display: flex;
